@@ -83,6 +83,7 @@ function colide(s,m){
     stonePosition = s.body.position;
     mangoPosition = m.body.position;
     var d = dist(stonePosition.x,stonePosition.y,mangoPosition.x,mangoPosition.y);
+    console.log(d);
     if(d<m.r+s.r){
         Matter.Body.setStatic(m.body,false);
     } 
